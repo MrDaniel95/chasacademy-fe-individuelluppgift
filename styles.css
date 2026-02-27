@@ -134,6 +134,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-size: 13px;
+    border: none;
 }
 
 .newsletter {
