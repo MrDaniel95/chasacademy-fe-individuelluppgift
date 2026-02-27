@@ -35,7 +35,7 @@ body {
 
 .menu-item a {
     text-decoration: none;
-    color: #888888;
+    color: #222;
     font-size: 14px;
 }
 
@@ -162,7 +162,7 @@ body {
     font-size: 12px;
 }
 
-.footer a {
+.footer a, p {
     color: #222;
     text-decoration: none;
     margin-left: 8px;
