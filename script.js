@@ -3,6 +3,10 @@
     while (Date.now() - start < 200) {}
 })();
 
+window.addEventListener("load", () => {
+   setTimeout(simulateHeavyWork, 0);
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     var items = document.querySelectorAll(".add-to-cart");
     items.forEach(function (item) {
