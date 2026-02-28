@@ -29,3 +29,7 @@ new PerformanceObserver((entryList) => {
   const lastEntry = entries[entries.length - 1];
   console.log("LCP:", lastEntry.startTime);
 }).observe({ type: "largest-contentful-paint", buffered: true });
+
+axe.run().then(results => {
+  console.log(results.violations);
+});
