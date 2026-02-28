@@ -23,3 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+new PerformanceObserver((entryList) => {
+  const entries = entryList.getEntries();
+  const lastEntry = entries[entries.length - 1];
+  console.log("LCP:", lastEntry.startTime);
+}).observe({ type: "largest-contentful-paint", buffered: true });
